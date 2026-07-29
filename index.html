@@ -98,11 +98,10 @@ h2 .a{color:var(--amarelo)} h2 .l{color:var(--laranja)}
 .band .credito{position:absolute;right:5vw;bottom:24px;z-index:3}
 
 /* FECHO - A NOSSA ENERGIA */
-.energia{position:relative;isolation:isolate;overflow:hidden;padding:108px 0;background:
-  radial-gradient(circle at 18% 20%,rgba(242,194,48,.14) 0 1px,transparent 2px),
-  radial-gradient(circle at 78% 72%,rgba(245,239,228,.12) 0 1px,transparent 2px),
-  linear-gradient(135deg,#061f1c 0%,#031714 54%,#072723 100%);border-top:1px solid rgba(242,194,48,.22)}
-.energia::before{content:"";position:absolute;z-index:-1;left:-22vw;top:50%;width:78vw;aspect-ratio:1;border-radius:50%;transform:translateY(-50%);background:repeating-radial-gradient(circle,transparent 0 12px,rgba(245,239,228,.045) 12.5px 13px);opacity:.62}
+.energia{position:relative;isolation:isolate;overflow:hidden;padding:108px 0;background:#031714;border-top:1px solid rgba(242,194,48,.34)}
+.energia-textura{position:absolute;z-index:-2;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 27%;opacity:.82;filter:saturate(1.06) contrast(1.04)}
+.energia::before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(3,23,20,.16) 0%,rgba(3,23,20,.28) 44%,rgba(3,23,20,.78) 68%,rgba(3,23,20,.94) 100%)}
+.energia::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(3,23,20,.12),transparent 24%,transparent 72%,rgba(3,23,20,.78)),radial-gradient(circle at 27% 48%,transparent 0 27%,rgba(3,23,20,.28) 56%,rgba(3,23,20,.62) 100%)}
 .energia-wrap{width:min(1220px,92vw);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr);gap:clamp(42px,6vw,92px);align-items:center}
 .energia-disco{position:relative;width:100%;max-width:680px;aspect-ratio:1;margin:auto;overflow:hidden;border-radius:50%;border:2px solid rgba(242,194,48,.78);box-shadow:0 0 0 10px rgba(242,194,48,.08),0 28px 90px rgba(0,0,0,.55)}
 .energia-disco img{position:absolute;width:291%;max-width:none;height:auto;left:-95.5%;top:-11.5%}
@@ -300,6 +299,7 @@ footer .tag2{margin-top:22px;display:inline-block;font-weight:600;font-size:11px
 
 <!-- FECHO - A NOSSA ENERGIA -->
 <section class="energia" aria-labelledby="energia-titulo">
+  <img class="energia-textura" src="./assets/vinil_petrobras_cosmico_rev21.png" alt="" aria-hidden="true">
   <div class="energia-wrap">
     <figure class="energia-disco">
       <img src="./assets/frame_encerramento_16x9_rev25.png" alt="">
