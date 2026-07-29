@@ -97,6 +97,24 @@ h2 .a{color:var(--amarelo)} h2 .l{color:var(--laranja)}
 .band .t-serifa{font-size:clamp(18px,2.2vw,24px);line-height:1.4;color:#fff;margin-top:16px;text-shadow:0 2px 12px rgba(7,39,35,.9)}
 .band .credito{position:absolute;right:5vw;bottom:24px;z-index:3}
 
+/* FECHO - A NOSSA ENERGIA */
+.energia{position:relative;isolation:isolate;min-height:72vh;display:grid;place-items:center;overflow:hidden;padding:110px 0;background:
+  radial-gradient(circle at 22% 24%,rgba(242,194,48,.16) 0 1px,transparent 2px),
+  radial-gradient(circle at 74% 31%,rgba(245,239,228,.16) 0 1px,transparent 2px),
+  radial-gradient(circle at 66% 78%,rgba(232,112,10,.12) 0 1px,transparent 2px),
+  linear-gradient(180deg,#061f1c 0%,#031714 100%);border-top:1px solid rgba(242,194,48,.22)}
+.energia::before{content:"";position:absolute;z-index:-2;width:min(1120px,112vw);aspect-ratio:1;border-radius:50%;background:
+  repeating-radial-gradient(circle,transparent 0 11px,rgba(245,239,228,.055) 11.5px 12.5px),
+  conic-gradient(from 218deg,rgba(242,194,48,.52),rgba(11,59,52,.08) 13%,rgba(245,239,228,.2) 28%,rgba(7,39,35,.12) 44%,rgba(232,112,10,.3) 61%,rgba(245,239,228,.16) 76%,rgba(242,194,48,.48));box-shadow:0 0 0 1px rgba(242,194,48,.2),0 0 90px rgba(0,0,0,.55);opacity:.7}
+.energia::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at center,rgba(7,39,35,.06) 0 24%,rgba(3,23,20,.2) 48%,rgba(3,23,20,.9) 92%)}
+.energia .selo{position:relative;width:min(900px,88vw);padding:72px 46px 68px;text-align:center;background:rgba(3,27,23,.76);border-top:2px solid var(--amarelo);border-bottom:2px solid var(--amarelo);box-shadow:0 24px 80px rgba(0,0,0,.38)}
+.energia .selo::before,.energia .selo::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:74%;height:1px;background:linear-gradient(90deg,transparent,rgba(242,194,48,.55),transparent)}
+.energia .selo::before{top:18px}.energia .selo::after{bottom:18px}
+.energia .pre{font-size:clamp(12px,1.4vw,16px);font-weight:600;letter-spacing:clamp(3px,.55vw,7px);color:#fff;text-transform:uppercase}
+.energia h2{margin:18px auto 0;font-size:clamp(48px,8.2vw,102px);line-height:.9;color:var(--amarelo);text-wrap:balance;text-shadow:0 4px 28px rgba(0,0,0,.5)}
+.energia .assinatura{margin-top:28px;font-family:'Cormorant';font-style:italic;font-size:clamp(17px,2vw,23px);line-height:1.4;color:rgba(245,239,228,.9)}
+.energia .contexto{margin-top:34px;font-size:10px;font-weight:600;letter-spacing:2.2px;color:rgba(245,239,228,.66);text-transform:uppercase}
+
 /* RODAPÉ */
 footer{padding:70px 0 46px;text-align:center;border-top:1px solid rgba(245,239,228,.18)}
 footer .m{font-family:'Limelight';font-size:24px;color:#fff;letter-spacing:2px}
@@ -118,6 +136,11 @@ footer .tag2{margin-top:22px;display:inline-block;font-weight:600;font-size:11px
   .stats{grid-template-columns:1fr}
   .wrap{padding:0 22px}
   .hero .sub{font-size:16px;width:86vw;max-width:86vw;padding-right:8px}
+  .energia{min-height:64vh;padding:78px 0}
+  .energia .selo{width:88vw;padding:58px 22px 54px}
+  .energia h2{font-size:clamp(44px,15vw,66px)}
+  .energia .pre{line-height:1.7}
+  .energia .contexto{line-height:1.65}
 }
 </style>
 </head>
@@ -264,6 +287,16 @@ footer .tag2{margin-top:22px;display:inline-block;font-weight:600;font-size:11px
         <p>Renato Borghi: cofundador do Teatro Oficina, protagonista de O Rei da Vela (1967) e vencedor de três Prêmios Molière.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- FECHO - A NOSSA ENERGIA -->
+<section class="energia" aria-labelledby="energia-titulo">
+  <div class="selo">
+    <div class="pre">A cultura do Brasil é</div>
+    <h2 id="energia-titulo">A NOSSA ENERGIA</h2>
+    <div class="assinatura">Teatro e música popular brasileira transformando memória em força de futuro.</div>
+    <div class="contexto">Minha Estrela Dalva · proposta para a Seleção Petrobras Cultural 2026</div>
   </div>
 </section>
 
