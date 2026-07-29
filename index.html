@@ -98,22 +98,24 @@ h2 .a{color:var(--amarelo)} h2 .l{color:var(--laranja)}
 .band .credito{position:absolute;right:5vw;bottom:24px;z-index:3}
 
 /* FECHO - A NOSSA ENERGIA */
-.energia{position:relative;isolation:isolate;min-height:72vh;display:grid;place-items:center;overflow:hidden;padding:110px 0;background:
-  radial-gradient(circle at 22% 24%,rgba(242,194,48,.16) 0 1px,transparent 2px),
-  radial-gradient(circle at 74% 31%,rgba(245,239,228,.16) 0 1px,transparent 2px),
-  radial-gradient(circle at 66% 78%,rgba(232,112,10,.12) 0 1px,transparent 2px),
-  linear-gradient(180deg,#061f1c 0%,#031714 100%);border-top:1px solid rgba(242,194,48,.22)}
-.energia::before{content:"";position:absolute;z-index:-2;width:min(1120px,112vw);aspect-ratio:1;border-radius:50%;background:
-  repeating-radial-gradient(circle,transparent 0 11px,rgba(245,239,228,.055) 11.5px 12.5px),
-  conic-gradient(from 218deg,rgba(242,194,48,.52),rgba(11,59,52,.08) 13%,rgba(245,239,228,.2) 28%,rgba(7,39,35,.12) 44%,rgba(232,112,10,.3) 61%,rgba(245,239,228,.16) 76%,rgba(242,194,48,.48));box-shadow:0 0 0 1px rgba(242,194,48,.2),0 0 90px rgba(0,0,0,.55);opacity:.7}
-.energia::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at center,rgba(7,39,35,.06) 0 24%,rgba(3,23,20,.2) 48%,rgba(3,23,20,.9) 92%)}
-.energia .selo{position:relative;width:min(900px,88vw);padding:72px 46px 68px;text-align:center;background:rgba(3,27,23,.76);border-top:2px solid var(--amarelo);border-bottom:2px solid var(--amarelo);box-shadow:0 24px 80px rgba(0,0,0,.38)}
-.energia .selo::before,.energia .selo::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:74%;height:1px;background:linear-gradient(90deg,transparent,rgba(242,194,48,.55),transparent)}
-.energia .selo::before{top:18px}.energia .selo::after{bottom:18px}
-.energia .pre{font-size:clamp(12px,1.4vw,16px);font-weight:600;letter-spacing:clamp(3px,.55vw,7px);color:#fff;text-transform:uppercase}
-.energia h2{margin:18px auto 0;font-size:clamp(48px,8.2vw,102px);line-height:.9;color:var(--amarelo);text-wrap:balance;text-shadow:0 4px 28px rgba(0,0,0,.5)}
-.energia .assinatura{margin-top:28px;font-family:'Cormorant';font-style:italic;font-size:clamp(17px,2vw,23px);line-height:1.4;color:rgba(245,239,228,.9)}
-.energia .contexto{margin-top:34px;font-size:10px;font-weight:600;letter-spacing:2.2px;color:rgba(245,239,228,.66);text-transform:uppercase}
+.energia{position:relative;isolation:isolate;overflow:hidden;padding:108px 0;background:
+  radial-gradient(circle at 18% 20%,rgba(242,194,48,.14) 0 1px,transparent 2px),
+  radial-gradient(circle at 78% 72%,rgba(245,239,228,.12) 0 1px,transparent 2px),
+  linear-gradient(135deg,#061f1c 0%,#031714 54%,#072723 100%);border-top:1px solid rgba(242,194,48,.22)}
+.energia::before{content:"";position:absolute;z-index:-1;left:-22vw;top:50%;width:78vw;aspect-ratio:1;border-radius:50%;transform:translateY(-50%);background:repeating-radial-gradient(circle,transparent 0 12px,rgba(245,239,228,.045) 12.5px 13px);opacity:.62}
+.energia-wrap{width:min(1220px,92vw);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr);gap:clamp(42px,6vw,92px);align-items:center}
+.energia-disco{position:relative;width:100%;max-width:680px;aspect-ratio:1;margin:auto;overflow:hidden;border-radius:50%;border:2px solid rgba(242,194,48,.78);box-shadow:0 0 0 10px rgba(242,194,48,.08),0 28px 90px rgba(0,0,0,.55)}
+.energia-disco img{position:absolute;width:291%;max-width:none;height:auto;left:-95.5%;top:-11.5%}
+.energia-copy{position:relative;padding:56px 0;border-top:2px solid var(--amarelo);border-bottom:2px solid var(--amarelo)}
+.energia-copy::before,.energia-copy::after{content:"";position:absolute;left:0;width:62%;height:1px;background:linear-gradient(90deg,rgba(242,194,48,.7),transparent)}
+.energia-copy::before{top:17px}.energia-copy::after{bottom:17px}
+.energia .chamada{font-family:'Limelight';font-size:clamp(24px,3vw,39px);line-height:1.08;color:var(--amarelo)}
+.energia .futuro{margin-top:9px;font-family:'Limelight';font-size:clamp(28px,3.4vw,46px);line-height:1.02;color:#fff}
+.energia .regua{margin-top:38px;padding:25px 0 20px;border-top:1px solid rgba(242,194,48,.68);border-bottom:1px solid rgba(242,194,48,.68)}
+.energia .pre{font-size:clamp(11px,1.1vw,14px);font-weight:600;letter-spacing:clamp(3px,.42vw,6px);color:#fff;text-transform:uppercase}
+.energia h2{margin:11px 0 0;font-size:clamp(48px,6.2vw,82px);line-height:.9;color:var(--amarelo);text-wrap:balance;text-shadow:0 4px 28px rgba(0,0,0,.5)}
+.energia .contexto{margin-top:27px;font-size:10px;font-weight:600;letter-spacing:2.2px;line-height:1.65;color:rgba(245,239,228,.68);text-transform:uppercase}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 
 /* RODAPÉ */
 footer{padding:70px 0 46px;text-align:center;border-top:1px solid rgba(245,239,228,.18)}
@@ -131,14 +133,20 @@ footer .tag2{margin-top:22px;display:inline-block;font-weight:600;font-size:11px
   .sec{padding:70px 0}
   .hero .base{flex-direction:column;align-items:flex-start;gap:12px}
   .hero .prod{text-align:left}
+  .energia-wrap{grid-template-columns:1fr;gap:48px}
+  .energia-disco{width:min(680px,86vw)}
+  .energia-copy{width:min(680px,86vw);margin:auto;text-align:center}
+  .energia-copy::before,.energia-copy::after{left:19%;width:62%}
 }
 @media (max-width:520px){
   .stats{grid-template-columns:1fr}
   .wrap{padding:0 22px}
   .hero .sub{font-size:16px;width:86vw;max-width:86vw;padding-right:8px}
-  .energia{min-height:64vh;padding:78px 0}
-  .energia .selo{width:88vw;padding:58px 22px 54px}
-  .energia h2{font-size:clamp(44px,15vw,66px)}
+  .energia{padding:72px 0}
+  .energia-wrap{gap:38px}
+  .energia-disco{width:86vw}
+  .energia-copy{width:86vw;padding:46px 12px}
+  .energia h2{font-size:clamp(44px,14vw,64px)}
   .energia .pre{line-height:1.7}
   .energia .contexto{line-height:1.65}
 }
@@ -292,11 +300,20 @@ footer .tag2{margin-top:22px;display:inline-block;font-weight:600;font-size:11px
 
 <!-- FECHO - A NOSSA ENERGIA -->
 <section class="energia" aria-labelledby="energia-titulo">
-  <div class="selo">
-    <div class="pre">A cultura do Brasil é</div>
-    <h2 id="energia-titulo">A NOSSA ENERGIA</h2>
-    <div class="assinatura">Teatro e música popular brasileira transformando memória em força de futuro.</div>
-    <div class="contexto">Minha Estrela Dalva · proposta para a Seleção Petrobras Cultural 2026</div>
+  <div class="energia-wrap">
+    <figure class="energia-disco">
+      <img src="./assets/frame_encerramento_16x9_rev25.png" alt="">
+      <figcaption class="sr-only">Soraya Ravenle e Renato Borghi no centro do disco verde, ao lado do logotipo oficial de Minha Estrela Dalva.</figcaption>
+    </figure>
+    <div class="energia-copy">
+      <div class="chamada">É o Teatro Promíscuo fazendo da saudade</div>
+      <div class="futuro">UMA FORÇA DE FUTURO.</div>
+      <div class="regua">
+        <div class="pre">A cultura do Brasil é</div>
+        <h2 id="energia-titulo">A NOSSA ENERGIA</h2>
+      </div>
+      <div class="contexto">Minha Estrela Dalva · proposta para a Seleção Petrobras Cultural 2026</div>
+    </div>
   </div>
 </section>
 
